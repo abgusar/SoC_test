@@ -1,0 +1,351 @@
+﻿Summary;Description
+IDENTITY AND ACCESS MANAGEMENT;
+IAM Access Control and Permission Management;
+Internal Users can authorise system access for Users;"AS A : System Administrator for the States of Guernsey
+
+I NEED TO : provide access to MyGov applications and data
+
+SO THAT : Users have the access to the applications and data they need to perform their roles
+
+I KNOW THIS IS SUCCESSFUL WHEN : A User can access the system through their own User Account, and only access the resources and functions permitted by their assigned role. I can track and audit User access and actions."
+Internal Users can manage User Accounts and Roles;"AS A : Authorised User
+
+I NEED TO : update User Accounts and Roles
+
+SO THAT : I can control access to the system and what Users can do
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can update User Accounts and Roles. Access for Users accurately reflects any changes made. Any updates are audited."
+Internal Users can suspend User Accounts and Roles;"AS A : System Administrator for the States of Guernsey
+
+I NEED TO : Suspend User Accounts and Roles
+
+SO THAT : I can prevent unauthorised access to systems and data
+
+I KNOW THIS IS SUCCESSFUL WHEN : Suspended accounts cannot log in or interact with systems. Suspension actions are logged for auditing purposes. I can reinstate the suspended account easily when needed."
+Internal Users can assign Roles to User Accounts;"AS A : System Administrator for the States of Guernsey
+
+I NEED TO : assign pre-defined roles to User Accounts 
+
+SO THAT : I can easily manage permissions on User Accounts and Users have the appropriate permissions to perform their tasks
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows me to select a user account and assign one or more pre-defined roles. Role changes are correctly reflected in the Users permissions within the system and take effect immediately. "
+Internal Users can manage Role hierarchies;"AS A : Security Officer
+
+I NEED TO : create and manage role hierarchies where lower-level roles inherit permissions from higher-level roles
+
+SO THAT : I can streamline permission assignments and reduce the administrative workload
+
+I KNOW THIS IS SUCCESSFUL WHEN : I set specific permissions for the ""Service Area Manager"" role, and all roles below it (e.g. Department Manager, Team Lead) automatically inherit those permissions. I can override inherited permissions at lower levels of the hierarchy if needed."
+Internal Users can manage permissions on User Accounts and Roles;"AS A : Security Officer for the States of Guernsey
+
+I NEED TO : assign and update permissions for User Accounts and Roles
+
+SO THAT : Users have the appropriate access levels to perform their tasks.
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can view a list of all existing permissions, I can select and assign them to a specific User Account or Role. I can remove permissions from a User Account or Role. Changes to permissions are reflected immediately to impacted Users. "
+Internal Users can apply granular permissions;"AS A : Team Administrator for the States of Guernsey
+
+I NEED TO : assign roles and permissions to Users in a flexible way
+
+SO THAT : I can control access to sensitive data and actions within the system
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can create customer roles with specific sets of permissions. I can assign Users those roles. I can group Users into teams and assign team-based permissions."
+Internal Users can prioritise permissions;"AS A : System Administrator for the States of Guernsey
+
+I NEED TO : establish a hierarchy of permission rules to determine a User’s final access level
+
+SO THAT : I can ensure that high-priority rules (e.g. legal restrictions) always take precedence, even if other permissions are more permissive.
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can assign different priorities to permission rules (e.g. Critical, High, Medium, Low). A “legally restricted” file cannot be opened by a User even if they have general ""View"" access to that file type.. The system provides clear feedback when lower-priority permissions are overridden."
+Internal Users can automate permission changes;"AS A : Data Administrator for the States of Guernsey
+
+I NEED TO : set time-based or condition-based rules to automatically change user permissions
+
+SO THAT : I can ensure access is granted or revoked without manual intervention
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can grant temporary access to a specific system for a User that automatically expires after a defined period. I can automatically revoke a user's “update” privileges if their account has been inactive for defined period."
+Internal Users can update permissions in bulk;"AS A : System Administrator
+
+I NEED TO : quickly modify permissions for multiple Users across a single object (e.g. data, document, etc.) or group of objects
+
+SO THAT : I can efficiently respond to changes in access requirements
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows for bulk selection of objects and mass updates to permissions. Permissions are updated immediately for a large number of users with a single command."
+IAM System may require multiple-party approval for permission changes;"AS A : System Administrator
+
+I NEED TO : require multiple approvals for changes to permissions on high-risk data or system configurations
+
+SO THAT : I can enhance security and reduce the risk of unauthorised changes
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows for designating specific permissions or actions as requiring multi-party approval. A sensitive permission change is logged as pending until all required approvals are received. I can set a critical system configuration change to require approval from both the IT Security Manager and the System Owner."
+Internal Users can control field-level access to data;"AS A : Data Administrator for the States of Guernsey
+
+I NEED TO : control which fields of data specific User Accounts or Roles can view and manage
+
+SO THAT : I can ensure data security and privacy in accordance with relevant regulations and laws. 
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can assign different field access levels (view, edit, hide) to various user roles. Users can only interact with the fields according to their assigned permissions."
+Internal Users can control access to Customer Records;"AS A : Data Administrator for the States of Guernsey
+
+I NEED TO : restrict which Users or Roles can view or manage specific records or sets of records
+
+SO THAT : I can easily protect sensitive information 
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can grant view-only access to a particular set of Customer Records for one User or Role. I can completely hide a specific Customer Record from another User or Role."
+Internal Users can control access to MyGov applications;"AS A : Data Administrator for the States of Guernsey
+
+I NEED TO : control which applications specific Users or Roles can access
+
+SO THAT : I can ensure users only have access to the tools they need to perform their jobs 
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can enable and disable access to specific applications. Controlling application access aligns with the principle of least privilege, promoting security."
+Internal Users can control access based on the User Verification-Level;"AS A : Information Security Officer for the States of Guernsey
+
+I NEED TO : control system access based on the verification level of the User  
+
+SO THAT : access to sensitive data and actions within Generic Systems are protected from unauthorised users
+
+I KNOW THIS IS SUCCESSFUL WHEN : Users can only access systems and features matching their verified status. Access attempts by unverified or insufficiently verified Users are blocked."
+Internal Users can control access based on the User Authentication-Level;"AS A : Information Security Officer for the States of Guernsey
+
+I NEED TO : control system access based on the authentication level of the User   
+
+SO THAT : access to sensitive data and actions within Generic Systems are protected from unauthorised users
+
+I KNOW THIS IS SUCCESSFUL WHEN : Users can only access systems and features matching their authentication status. Access attempts by unauthenticated or insufficiently authenticated Users are blocked."
+Internal Users can control access using dynamic authentication rules;"AS A : Security Officer for States of Guernsey
+
+I NEED TO : authenticate Users using dynamic factors (e.g. time, location, etc.) that challenges unusual access requests
+
+SO THAT : I can protect sensitive systems and data from unauthorised access.  
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system blocks or requires additional verification for logins outside of a User's typical access patterns (location, time, device). The level of security adapts to the sensitivity of the data being accessed."
+Internal Users can apply risk-based access controls;"AS A : System Administrator for the States of Guernsey
+
+I NEED TO : assign sensitivity levels to data and services, and require matching authentication strength for access
+
+SO THAT : access to sensitive data is restricted to Users who have provided sufficient proof of identity
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows assigning sensitivity labels to data (e.g. Low, Medium, High). I can label an object (i.e. data, document, etc.) as ""Highly Confidential"" and configure access to require two-factor authentication. Access to an object is blocked if the User's authentication level doesn't match."
+User is notified of changes to their access levels;"AS A : Customer or Internal User
+
+I NEED TO : be notified when my permission to access resources is changed
+
+SO THAT : I’m aware of what I can and cannot do
+
+I KNOW THIS IS SUCCESSFUL WHEN : I receive a clear and timely notification whenever permissions are added, removed, or modified."
+Internal Users can search access control data;"AS A : Security Officer for the States of Guernsey 
+
+I NEED TO : search for items within the Access Control System
+
+SO THAT : I can easily find and manage relevant User data
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can search using various criteria (e.g. User Account, Role, permission)."
+Internal Users can categorise Objects;"AS A : Security Officer
+
+I NEED TO : categorise objects (e.g. data, documents, etc.) into groups with shared permission settings
+
+SO THAT : I can easily manage access rights for a large number of objects at once.
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows the creation of object groups with assignable permissions. A new object added to a group correctly inherits the group's permissions. "
+Internal Users can apply Attributes to Objects;"AS A : System Administrator for the States of Guernsey
+
+I NEED TO : attach descriptive attributes (e.g. sensitivity, department, location, project, etc.) to Users and data
+
+SO THAT : I can make informed decisions when setting up permissions.
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows the creation of custom attributes for both users and objects. I can successfully filter a list of objects based on a specific attribute."
+Data Administrator can create new data groups in the Customer Record;"AS A : Data Administrator for the States of Guernsey
+
+I NEED TO : add additional fields of data to the Customer Record
+
+SO THAT : where MyGov needs to hold additional information related to this Customer (e.g. financial information, medical information) this can be easily added to the Customer Record and accessed by authorised Generic Systems and Users
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can add a new field, or group of fields to the Customer Record. This additional data can be accessed under the same access controls and rules as existing data"
+Data Administrator can manage data groups in the Customer Record;"AS A : Data Administrator for the States of Guernsey
+
+I NEED TO : manage (edit/delete) fields of data in the Customer Record
+
+SO THAT : where MyGov needs to hold additional information related to a Customer (e.g. financial information, medical information) this can be easily updated to the Customer Record 
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can amend a field, or group of fields on the Customer Record"
+IAM Authentication and Verification;
+Enforce Strong Authentication for Access Control Management;"AS A : Security Officer for the States of Guernsey
+
+I NEED TO : require MFA for any User making changes to the Access Control System
+
+SO THAT : I can protect the integrity or permission and reduce the risk of unauthorised changes
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system enforces MFA for a designated set of administrative actions related to access control. A user attempting to modify access controls without MFA is blocked. Users with permissions to change access controls must complete MFA each time they attempt to make changes."
+Informing a user if login fails;"Display login fail message if login fails
+
+ 
+
+AS A: Customer
+
+I NEED TO: know if my login has failed
+
+SO THAT: I know the why I wasn’t logged in
+
+I KNOW THIS IS SUCCESSFUL WHEN: login fail message is displayed "
+IAM Monitoring and Support;Provides tools for real-time monitoring of user activities and system access. Facilitates proactive support and troubleshooting.
+Internal Users can monitor User activity;"AS A : Security Officer for the States of Guernsey
+
+I NEED TO : view and analyse user account and role activity
+
+SO THAT : I can detect potential security risks or unauthorised access 
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can filter audit logs using a range of options (e.g. user, role, action, time period, etc.), I receive alerts when suspicious activity patterns are identified (e.g. logins outside normal hours, multiple failed login attempts, unusual changes to roles, etc.)."
+Internal User can provide support to Users;"AS A : Support Administrator for the States of Guernsey
+
+I NEED TO : reset a Users credentials and troubleshoot issues
+
+SO THAT : I can provide an expected level of support to Users attempting to access our System(s) 
+
+I KNOW THIS IS SUCCESSFUL WHEN : Updates to the credentials are reflected immediately. The User is notified when their credentials have been changed. Users can successfully login with their reset credentials. "
+IAM Compliance and Security;
+IAM System will provide a secure login function;"AS A : Customer
+
+I NEED TO : Have a secure login process for MyGov which aligns with industry certifications
+
+SO THAT : The likelihood of my account being compromised is minimised and mitigated, protecting me and my data
+
+I KNOW THIS WILL BE SUCCESSFUL WHEN : Various methods of securing accounts are in place and the solution is in line with industry wide security certifications. "
+IAM System will lock User Accounts after unsuccessful login attempts;"Link to [https://mygov-digital.atlassian.net/browse/MGD-3|https://mygov-digital.atlassian.net/browse/MGD-3|smart-link]
+
+AS A : User
+
+I NEED TO : be locked out of my account after _n_ unsuccessful attempts 
+
+SO THAT:  my account is more secure and protected from unauthorised access
+
+I KNOW THIS IS SUCCESSFUL WHEN : My account has been locked and I can no longer log in and a message is displayed explaining I am locked out"
+IAM System will monitor for suspicious login attempts;"AS A : Customer or Internal User
+
+I NEED TO : Have my login attempts monitored for suspicious activity and have my account locked automatically if these are detected
+
+SO THAT : my account is secured and the risk of unauthorised access is minimised
+
+I KNOW THIS WILL BE SUCCESSFUL WHEN : Monitoring is in place to help secure my account and prevent unauthorised access. Examples might include, unusual geographic locations, new browsers, unusual IP addresses, unusual times "
+IAM System will notify Users when User Account is locked;"AS A : Customer or Internal User
+
+I NEED TO : be notified when my User Account has been locked 
+
+SO THAT : I am aware of attempts to access my account incorrectly and can take the appropriate measures to secure my account
+
+I KNOW THIS IS SUCCESSFUL WHEN : When the status of my account is changed to locked a communication is sent to me using the External Communications System [https://mygov-digital.atlassian.net/browse/MGD-47|https://mygov-digital.atlassian.net/browse/MGD-47|smart-link] "
+Internal Users can obfuscate data;"AS A : System Administrator for the States of Guernsey
+
+I NEED TO : partially obfuscate (e.g. mask, redact, placeholders, etc.) data when a User has insufficient permissions to see the full data with a reason why
+
+SO THAT : Users are aware that information exists, without revealing sensitive details and can understand why the data is obfuscated
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows for setting different obfuscation rules (e.g. masking characters, showing metadata only, etc.). Obfuscation settings are configurable. I can provide a reasons why the data is being obfuscated."
+IAM System will obfuscate sensitive data in Audit Logs;"AS A : Compliance Officer
+
+I NEED TO : view audit logs, including those containing potentially sensitive data I don't normally have access to, with sensitive parts obfuscated
+
+SO THAT : I can investigate potential issues or security breaches without compromising confidentiality
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system obfuscates sensitive data in audit logs when viewed by users without the necessary permissions. I can see an audit entry showing a change, but the details are obfuscated. An Authorised User can view an audit log containing redacted sensitive information. I have the option to request clarification from an authorised user about the obfuscated audit log entry."
+IAM System can prevent access to sensitive data in Audit Logs;"AS A : Compliance Officer
+
+I NEED TO : view audit logs, excluding highly sensitive data that I don't normally have access to
+
+SO THAT : I can view logs to investigate potential issues or security breaches without compromising confidentiality
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system ensures highly-sensitive data in audit logs is inaccessible when viewed by users without the necessary permissions. An Authorised User can view an audit log containing highly-sensitive information. "
+IAM System will provide reporting for obfuscated data;"AS A : Security Officer
+
+I NEED TO : access reports related to obfuscated data
+
+SO THAT : I can identify Customer Records with obfuscated data, the reasons for obfuscation, and the duration of obfuscation
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can run a report on demand. This reports provides with information related to Customer Records which have been obfuscated within the MyGov ecosystem."
+Internal User can configure automated alerts;"AS A : System Administrator for the States of Guernsey
+
+I NEED TO : set up alerts that trigger based on specific changes to sensitive data or unusual activity patterns.
+
+SO THAT : I can proactively notify Users of potential security risks or compliance issues without delay.
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows me to define alerts based on changes to specific objects, attributes, or based on activity patterns. "
+Access controls for systems will comply with applicable laws and best practices;"AS A : Compliance Officer
+
+I NEED TO : ensure that the access is compliant with laws and best practices
+
+SO THAT : we meet or exceed the requirements of applicable laws and best practices
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can obtain verification that the solution is compliant with laws and best practices."
+IAM Single Sign-On and Session Management;
+All Users can login;"AS A : Customer or Internal User
+
+I NEED TO : log in to my MyGov Digital account 
+
+SO THAT : I can access data and systems which I have the permission to access
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can log in and then view my personalised screen"
+All Users can logout;"AS A : Customer or Internal User
+
+I NEED TO : logout of my current active user session
+
+SO THAT : I am not left logged in on any device once I have finished using the system   
+
+I KNOW THIS IS SUCCESSFUL WHEN: I choose to logout, I am then logged out from all devices. The system notifies me that I am logged out. I cannot login until I reauthenticate with my credentials."
+Single sign-on for Internal User access;"AS A : Internal User
+
+I NEED TO : Access all MyGov Digital applications that I have permissions for using a single set of credentials, in a single session
+
+SO THAT : I have a streamlined experience and don’t have to log-in multiple times to the systems I need to perform my role
+
+I KNOW THIS WILL BE SUCCESSFUL WHEN : If I sign-into my SoG account I am automatically signed into MyGov digital services I have permission to access. "
+Single sign-on for Customer access;"AS A : Customer 
+
+I NEED TO : access all government services that I am signed up for with one log-in (for example the already digitised areas of, Revenue Service, Traffic & Highways, Population Management, Guernsey Registry, Recruitment, COVID Certificates/Travel Tracker)
+
+SO THAT :  I have a streamlined experience and it feels like the government is working in a joined up way
+
+I KNOW THIS WILL BE SUCCESSFUL WHEN : I can log-in to my MyGov Digital Customer account and this would provide me with access to other online digital services. For example after signing-in to MyGov Digital would be able to submit my tax return without needing to sign-in again. "
+IAM System will end inactive session;"AS A : Security Officer
+
+I NEED TO : ensure inactive user sessions will timeout and expire after a set time
+
+SO THAT : User Accounts and information is protected from unauthorised access
+
+I KNOW THIS WILL BE SUCCESSFUL WHEN : After signing in, a user session will expire after a set amount of time if contextual factors indicate the User is no longer active  "
+Internal User can customise timeout settings for different functionality;"AS A : Internal User
+
+I NEED TO : customise the session timeouts for different activities or functionality
+
+SO THAT : specific areas which require more security can be better protected
+
+I KNOW THIS WILL BE SUCCESSFUL WHEN : The length of a session timeout can be changed based on what the User is doing"
+IAM Audit and Reporting;
+Data and information recording;"AS A : Internal User
+
+I NEED TO : have access to a wide variety of detailed data and information regarding the use, user experience, and performance of the Single Sign-on Solution. (For example, timestamps, number of sessions which time out, lengths of sessions etc…)
+
+SO THAT : Any and all data which I might want to examine or report on can be made available to me
+
+I KNOW THIS WILL BE SUCCESSFUL WHEN : "
+Reporting on Login Data;"AS A : Internal User
+
+I NEED : The login solution to be capable of exporting all the data and information it captures to the solution defined in the Reporting & Auditing Epic
+
+SO THAT : Information about the performance, use, user experience etc… of the login system can be interrogated and reported on in the same way as all the other areas of MyGov Digital
+
+I KNOW THIS WILL BE SUCCESSFUL WHEN : All the information and data from the Single Sign-On Solution can be reported on"
+Reporting subject access privileges for regulatory requirements such as GDPR and DSAR;"AS A : States of Guernsey
+
+I NEED TO : have an Access Control System that is capable of reporting subject access privileges for regulatory requirements such as GDPR and DSAR
+
+SO THAT : the Access Control System can be used to generate reports that show what data a subject is able to access to assist in performing regulatory obligations such as GDPR and DSAR
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can obtain verification that the Access Control System is capable of generating reports that satisfy subject access information for regulatory obligations such as GDPR and DSAR."
+IAM System will have integration capabilities;
+IAM System will integrate with MyGov Generic Systems;"AS A : States of Guernsey
+
+I NEED TO : the IAM System to be integrated with all other Generic Systems
+
+SO THAT : access controls can be managed centrally across the MyGov ecosystem
+
+I KNOW THIS IS SUCCESSFUL WHEN : Rules can be set in the IAM system, and these rules are applied across the MyGov ecosystem"
