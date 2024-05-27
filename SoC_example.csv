@@ -1,6 +1,9 @@
 ﻿Summary;Description
 IDENTITY AND ACCESS MANAGEMENT;
 IAM Access Control and Permission Management;
+Subsystem: User and Role Management Subsystem;
+Knowledge Base File Name: overview.adoc;
+Documentation Link: https://github.com/epam/edp-ddm-user-management;
 Internal Users can authorise system access for Users;"AS A : System Administrator for the States of Guernsey
 
 I NEED TO : provide access to MyGov applications and data
@@ -293,59 +296,4 @@ SO THAT : I am not left logged in on any device once I have finished using the s
 I KNOW THIS IS SUCCESSFUL WHEN: I choose to logout, I am then logged out from all devices. The system notifies me that I am logged out. I cannot login until I reauthenticate with my credentials."
 Single sign-on for Internal User access;"AS A : Internal User
 
-I NEED TO : Access all MyGov Digital applications that I have permissions for using a single set of credentials, in a single session
-
-SO THAT : I have a streamlined experience and don’t have to log-in multiple times to the systems I need to perform my role
-
-I KNOW THIS WILL BE SUCCESSFUL WHEN : If I sign-into my SoG account I am automatically signed into MyGov digital services I have permission to access. "
-Single sign-on for Customer access;"AS A : Customer 
-
-I NEED TO : access all government services that I am signed up for with one log-in (for example the already digitised areas of, Revenue Service, Traffic & Highways, Population Management, Guernsey Registry, Recruitment, COVID Certificates/Travel Tracker)
-
-SO THAT :  I have a streamlined experience and it feels like the government is working in a joined up way
-
-I KNOW THIS WILL BE SUCCESSFUL WHEN : I can log-in to my MyGov Digital Customer account and this would provide me with access to other online digital services. For example after signing-in to MyGov Digital would be able to submit my tax return without needing to sign-in again. "
-IAM System will end inactive session;"AS A : Security Officer
-
-I NEED TO : ensure inactive user sessions will timeout and expire after a set time
-
-SO THAT : User Accounts and information is protected from unauthorised access
-
-I KNOW THIS WILL BE SUCCESSFUL WHEN : After signing in, a user session will expire after a set amount of time if contextual factors indicate the User is no longer active  "
-Internal User can customise timeout settings for different functionality;"AS A : Internal User
-
-I NEED TO : customise the session timeouts for different activities or functionality
-
-SO THAT : specific areas which require more security can be better protected
-
-I KNOW THIS WILL BE SUCCESSFUL WHEN : The length of a session timeout can be changed based on what the User is doing"
-IAM Audit and Reporting;
-Data and information recording;"AS A : Internal User
-
-I NEED TO : have access to a wide variety of detailed data and information regarding the use, user experience, and performance of the Single Sign-on Solution. (For example, timestamps, number of sessions which time out, lengths of sessions etc…)
-
-SO THAT : Any and all data which I might want to examine or report on can be made available to me
-
-I KNOW THIS WILL BE SUCCESSFUL WHEN : "
-Reporting on Login Data;"AS A : Internal User
-
-I NEED : The login solution to be capable of exporting all the data and information it captures to the solution defined in the Reporting & Auditing Epic
-
-SO THAT : Information about the performance, use, user experience etc… of the login system can be interrogated and reported on in the same way as all the other areas of MyGov Digital
-
-I KNOW THIS WILL BE SUCCESSFUL WHEN : All the information and data from the Single Sign-On Solution can be reported on"
-Reporting subject access privileges for regulatory requirements such as GDPR and DSAR;"AS A : States of Guernsey
-
-I NEED TO : have an Access Control System that is capable of reporting subject access privileges for regulatory requirements such as GDPR and DSAR
-
-SO THAT : the Access Control System can be used to generate reports that show what data a subject is able to access to assist in performing regulatory obligations such as GDPR and DSAR
-
-I KNOW THIS IS SUCCESSFUL WHEN : I can obtain verification that the Access Control System is capable of generating reports that satisfy subject access information for regulatory obligations such as GDPR and DSAR."
-IAM System will have integration capabilities;
-IAM System will integrate with MyGov Generic Systems;"AS A : States of Guernsey
-
-I NEED TO : the IAM System to be integrated with all other Generic Systems
-
-SO THAT : access controls can be managed centrally across the MyGov ecosystem
-
-I KNOW THIS IS SUCCESSFUL WHEN : Rules can be set in the IAM system, and these rules are applied across the MyGov ecosystem"
+I NEED TO : Access all MyGov Digital applications
