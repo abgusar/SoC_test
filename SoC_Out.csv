@@ -1,0 +1,9 @@
+IDENTITY AND ACCESS MANAGEMENT;
+IAM Access Control and Permission Management;
+Internal Users can authorise system access for Users;AS A : System Administrator for the States of Guernsey
+
+I NEED TO : provide access to MyGov applications and data
+
+SO THAT : Users have the access to the applications and data they need to perform their roles
+
+I KNOW THIS IS SUCCESSFUL WHEN : A User can access the system through their own User Account, and only access the resources and functions permitted by their assigned role. I can track and audit User access and actions.;Subsystem;File;Link
