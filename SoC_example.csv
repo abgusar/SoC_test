@@ -1,8 +1,8 @@
-﻿Summary;Description
+Summary;Description
 IDENTITY AND ACCESS MANAGEMENT;
 IAM Access Control and Permission Management;
 Subsystem: User and Role Management Subsystem;
-Knowledge Base File Name: overview.adoc;
+Knowledge Base File Name: access-control.adoc;
 Documentation Link: https://github.com/epam/edp-ddm-user-management;
 Internal Users can authorise system access for Users;"AS A : System Administrator for the States of Guernsey
 
