@@ -35,7 +35,9 @@ I NEED TO : assign pre-defined roles to User Accounts
 
 SO THAT : I can easily manage permissions on User Accounts and Users have the appropriate permissions to perform their tasks
 
-I KNOW THIS IS SUCCESSFUL WHEN : The system allows me to select a user account and assign one or more pre-defined roles. Role changes are correctly reflected in the Users permissions within the system and take effect immediately. "
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows me to select a user account and assign one or more pre-defined roles. Role changes are correctly reflected in the Users permissions within the system and take effect immediately. 
+
+Notes: Subsystem: User and Role Management Subsystem; File Name: access-control.adoc; Documentation Link: https://github.com/epam/edp-ddm-user-management"
 Internal Users can manage Role hierarchies;"AS A : Security Officer
 
 I NEED TO : create and manage role hierarchies where lower-level roles inherit permissions from higher-level roles
@@ -291,8 +293,4 @@ I NEED TO : log in to my MyGov Digital account 
 SO THAT : I can access data and systems which I have the permission to access
 
 I KNOW THIS IS SUCCESSFUL WHEN : I can log in and then view my personalised screen"
-All Users can logout;"AS A : Customer or Internal User
-
-I NEED TO : logout of my current active user session
-
-SO THAT : I am not left logged in on any device once
+All
