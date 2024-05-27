@@ -17,7 +17,9 @@ I NEED TO : update User Accounts and Roles
 
 SO THAT : I can control access to the system and what Users can do
 
-I KNOW THIS IS SUCCESSFUL WHEN : I can update User Accounts and Roles. Access for Users accurately reflects any changes made. Any updates are audited."
+I KNOW THIS IS SUCCESSFUL WHEN : I can update User Accounts and Roles. Access for Users accurately reflects any changes made. Any updates are audited.
+
+Notes: Subsystem: User and Role Management Subsystem; File Name: overview.adoc; Documentation Link: https://github.com/epam/edp-ddm-user-management"
 Internal Users can suspend User Accounts and Roles;"AS A : System Administrator for the States of Guernsey
 
 I NEED TO : Suspend User Accounts and Roles
@@ -293,7 +295,4 @@ I NEED TO : logout of my current active user session
 
 SO THAT : I am not left logged in on any device once I have finished using the system   
 
-I KNOW THIS IS SUCCESSFUL WHEN: I choose to logout, I am then logged out from all devices. The system notifies me that I am logged out. I cannot login until I reauthenticate with my credentials."
-Single sign-on for Internal User access;"AS A : Internal User
-
-I NEED TO : Access all MyGov Digital applications
+I KNOW THIS IS SUCCESSFUL WHEN: I choose to logout, I am then logged out from all devices. The system notifies me that I am logged out
