@@ -10,7 +10,7 @@ I NEED TO : provide access to MyGov applications and data
 
 SO THAT : Users have the access to the applications and data they need to perform their roles
 
-I KNOW THIS IS SUCCESSFUL WHEN : A User can access the system through their own User Account, and only access the resources and functions permitted by their assigned role. I can track and audit User access and actions."
+I KNOW THIS IS SUCCESSFUL WHEN : A User can access the system through their own User Account, and only access the resources and functions permitted by their assigned role. I can track and audit User access and actions."; Access Control Subsystem; access-control.adoc; https://github.com/epam/diia-engine-documentation/docs/ua/modules/arch/pages/architecture/security/access-control.adoc
 Internal Users can manage User Accounts and Roles;"AS A : Authorised User
 
 I NEED TO : update User Accounts and Roles
@@ -290,7 +290,4 @@ All Users can login;"AS A : Customer or Internal User
 
 I NEED TO : log in to my MyGov Digital account 
 
-SO THAT : I can access data and systems which I have the permission to access
-
-I KNOW THIS IS SUCCESSFUL WHEN : I can log in and then view my personalised screen"
-All
+SO
