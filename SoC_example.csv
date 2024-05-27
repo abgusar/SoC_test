@@ -26,7 +26,9 @@ I NEED TO : Suspend User Accounts and Roles
 
 SO THAT : I can prevent unauthorised access to systems and data
 
-I KNOW THIS IS SUCCESSFUL WHEN : Suspended accounts cannot log in or interact with systems. Suspension actions are logged for auditing purposes. I can reinstate the suspended account easily when needed."
+I KNOW THIS IS SUCCESSFUL WHEN : Suspended accounts cannot log in or interact with systems. Suspension actions are logged for auditing purposes. I can reinstate the suspended account easily when needed.
+
+Notes: Subsystem: User and Role Management Subsystem; File Name: platform-actors-roles.adoc; Documentation Link: https://github.com/epam/edp-ddm-user-management"
 Internal Users can assign Roles to User Accounts;"AS A : System Administrator for the States of Guernsey
 
 I NEED TO : assign pre-defined roles to User Accounts 
@@ -293,6 +295,4 @@ All Users can logout;"AS A : Customer or Internal User
 
 I NEED TO : logout of my current active user session
 
-SO THAT : I am not left logged in on any device once I have finished using the system   
-
-I KNOW THIS IS SUCCESSFUL WHEN: I choose to logout, I am then logged out from all devices. The system notifies me that I am logged out
+SO THAT : I am not left logged in on any device once
