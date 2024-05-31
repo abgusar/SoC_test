@@ -1,0 +1,87 @@
+IDENTITY AND ACCESS MANAGEMENT;IAM Access Control and Permission Management;Internal Users can authorise system access for Users;AS A : System Administrator for the States of Guernsey
+
+I NEED TO : provide access to MyGov applications and data
+
+SO THAT : Users have the access to the applications and data they need to perform their roles
+
+I KNOW THIS IS SUCCESSFUL WHEN : A User can access the system through their own User Account, and only access the resources and functions permitted by their assigned role. I can track and audit User access and actions.,Subsystem: Access Control,The Access Control subsystem enables system administrators to manage user access permissions effectively, ensuring users have appropriate access. Described in AccessControl.md
+
+IDENTITY AND ACCESS MANAGEMENT;IAM Access Control and Permission Management;Internal Users can manage User Accounts and Roles;AS A : Authorised User
+
+I NEED TO : update User Accounts and Roles
+
+SO THAT : I can control access to the system and what Users can do
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can update User Accounts and Roles. Access for Users accurately reflects any changes made. Any updates are audited.,Subsystem: User Management,The User Management subsystem allows for the creation, update, and deletion of user accounts and roles, directly impacting access control. Described in UserManagement.md
+
+IDENTITY AND ACCESS MANAGEMENT;IAM Access Control and Permission Management;Internal Users can suspend User Accounts and Roles;AS A : System Administrator for the States of Guernsey
+
+I NEED TO : Suspend User Accounts and Roles
+
+SO THAT : I can prevent unauthorised access to systems and data
+
+I KNOW THIS IS SUCCESSFUL WHEN : Suspended accounts cannot log in or interact with systems. Suspension actions are logged for auditing purposes. I can reinstate the suspended account easily when needed.,Subsystem: Account Suspension,The Account Suspension subsystem provides the functionality to suspend and reactivate user accounts, as a part of comprehensive access control. Described in AccountSuspension.md
+
+IDENTITY AND ACCESS MANAGEMENT;IAM Access Control and Permission Management;Internal Users can assign Roles to User Accounts;AS A : System Administrator for the States of Guernsey
+
+I NEED TO : assign pre-defined roles to User Accounts 
+
+SO THAT : I can easily manage permissions on User Accounts and Users have the appropriate permissions to perform their tasks
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows me to select a user account and assign one or more pre-defined roles. Role changes are correctly reflected in the Users permissions within the system and take effect immediately.,Subsystem: Role Assignment,The Role Assignment subsystem streamlines the process of assigning roles to user accounts, facilitating efficient permissions management. Described in RoleAssignment.md
+
+IDENTITY AND ACCESS MANAGEMENT;IAM Access Control and Permission Management;Internal Users can manage Role hierarchies;AS A : Security Officer
+
+I NEED TO : create and manage role hierarchies where lower-level roles inherit permissions from higher-level roles
+
+SO THAT : I can streamline permission assignments and reduce the administrative workload
+
+I KNOW THIS IS SUCCESSFUL WHEN : I set specific permissions for the "Service Area Manager" role, and all roles below it (e.g. Department Manager, Team Lead) automatically inherit those permissions. I can override inherited permissions at lower levels of the hierarchy if needed.,Subsystem: Role Hierarchy Management,The Role Hierarchy Management subsystem allows for the creation and management of role hierarchies, simplifying permission assignments. Described in RoleHierarchyManagement.md
+
+IDENTITY AND ACCESS MANAGEMENT;IAM Access Control and Permission Management;Internal Users can manage permissions on User Accounts and Roles;AS A : Security Officer for the States of Guernsey
+
+I NEED TO : assign and update permissions for User Accounts and Roles
+
+SO THAT : Users have the appropriate access levels to perform their tasks.
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can view a list of all existing permissions, I can select and assign them to a specific User Account or Role. I can remove permissions from a User Account or Role. Changes to permissions are reflected immediately to impacted Users.,Subsystem: Permission Management,The Permission Management subsystem facilitates the assignment and updating of permissions for user accounts and roles, enhancing access control. Described in PermissionManagement.md
+
+IDENTITY AND ACCESS MANAGEMENT;IAM Access Control and Permission Management;Internal Users can apply granular permissions;AS A : Team Administrator for the States of Guernsey
+
+I NEED TO : assign roles and permissions to Users in a flexible way
+
+SO THAT : I can control access to sensitive data and actions within the system
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can create customer roles with specific sets of permissions. I can assign Users those roles. I can group Users into teams and assign team-based permissions.,Subsystem: Granular Permissions,The Granular Permissions subsystem enables the assignment of detailed and specific permissions to user accounts, ensuring tailored access control. Described in GranularPermissions.md
+
+IDENTITY AND ACCESS MANAGEMENT;IAM Access Control and Permission Management;Internal Users can prioritise permissions;AS A : System Administrator for the States of Guernsey
+
+I NEED TO : establish a hierarchy of permission rules to determine a User’s final access level
+
+SO THAT : I can ensure that high-priority rules (e.g. legal restrictions) always take precedence, even if other permissions are more permissive.
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can assign different priorities to permission rules (e.g. Critical, High, Medium, Low). A “legally restricted” file cannot be opened by a User even if they have general "View" access to that file type.. The system provides clear feedback when lower-priority permissions are overridden.,Subsystem: Permission Prioritisation,The Permission Prioritisation subsystem enables the establishment of a hierarchy of permission rules, ensuring that high-priority rules take precedence. Described in PermissionPrioritisation.md
+
+IDENTITY AND ACCESS MANAGEMENT;IAM Access Control and Permission Management;Internal Users can automate permission changes;AS A : Data Administrator for the States of Guernsey
+
+I NEED TO : set time-based or condition-based rules to automatically change user permissions
+
+SO THAT : I can ensure access is granted or revoked without manual intervention
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can grant temporary access to a specific system for a User that automatically expires after a defined period. I can automatically revoke a user's “update” privileges if their account has been inactive for defined period.,Subsystem: Permission Automation,The Permission Automation subsystem allows for the setting of time-based or condition-based rules to automate changes in user permissions, enhancing the efficiency of access control. Described in PermissionAutomation.md
+
+IDENTITY AND ACCESS MANAGEMENT;IAM Access Control and Permission Management;Internal Users can update permissions in bulk;AS A : System Administrator
+
+I NEED TO : quickly modify permissions for multiple Users across a single object (e.g. data, document, etc.) or group of objects
+
+SO THAT : I can efficiently respond to changes in access requirements
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows for bulk selection of objects and mass updates to permissions. Permissions are updated immediately for a large number of users with a single command.,Subsystem: Bulk Permission Updates,The Bulk Permission Updates subsystem enables the efficient modification of permissions for multiple users simultaneously, streamlining access management. Described in BulkPermissionUpdates.md
+
+IDENTITY AND ACCESS MANAGEMENT;IAM Access Control and Permission Management;IAM System may require multiple-party approval for permission changes;AS A : System Administrator
+
+I NEED TO : require multiple approvals for changes to permissions on high-risk data or system configurations
+
+SO THAT : I can enhance security and reduce the risk of unauthorised changes
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows for designating specific permissions or actions as requiring multi-party approval. A sensitive permission change is logged as pending until all required approvals are received. I can set a critical system configuration change
