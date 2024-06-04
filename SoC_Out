@@ -1,1 +1,28 @@
-DESCRIPTION,USECASE,NOTE 1,NOTE 2,NOTE 3
+IDENTITY AND ACCESS MANAGEMENT;,IAM Access Control and Permission Management;,Internal Users can authorise system access for Users,"AS A : System Administrator for the States of Guernsey
+
+I NEED TO : provide access to MyGov applications and data
+
+SO THAT : Users have the access to the applications and data they need to perform their roles
+
+I KNOW THIS IS SUCCESSFUL WHEN : A User can access the system through their own User Account, and only access the resources and functions permitted by their assigned role. I can track and audit User access and actions.",Keycloak REST API Extension,The Keycloak REST API Extension subsystem is used for managing access control and permissions through a comprehensive set of RESTful API endpoints. This allows for fine-grained control over system access for users.,keycloak-rest-api-ext.adoc
+Internal Users can manage User Accounts and Roles;"AS A : Authorised User
+
+I NEED TO : update User Accounts and Roles
+
+SO THAT : I can control access to the system and what Users can do
+
+I KNOW THIS IS SUCCESSFUL WHEN : I can update User Accounts and Roles. Access for Users accurately reflects any changes made. Any updates are audited.",User Settings Management Service,The User Settings Management Service provides functionalities for managing user accounts and roles, including updating and auditing changes.,user-settings-service-api.adoc
+Internal Users can suspend User Accounts and Roles;"AS A : System Administrator for the States of Guernsey
+
+I NEED TO : Suspend User Accounts and Roles
+
+SO THAT : I can prevent unauthorised access to systems and data
+
+I KNOW THIS IS SUCCESSFUL WHEN : Suspended accounts cannot log in or interact with systems. Suspension actions are logged for auditing purposes. I can reinstate the suspended account easily when needed.",User Process Management Service,This subsystem allows internal users to suspend user accounts and roles, ensuring that suspended accounts cannot interact with systems. Suspension actions are tracked for audit purposes.,user-process-management.adoc
+Internal Users can assign Roles to User Accounts;"AS A : System Administrator for the States of Guernsey
+
+I NEED TO : assign pre-defined roles to User Accounts 
+
+SO THAT : I can easily manage permissions on User Accounts and Users have the appropriate permissions to perform their tasks
+
+I KNOW THIS IS SUCCESSFUL WHEN : The system allows me to select a user account and assign one or more pre-defined roles. Role changes are correctly reflected in the Users permissions within the system and take effect immediately. ",User Task Management Service,The User Task Management Service subsystem enables the assignment of pre-defined roles to user accounts, ensuring immediate reflection of role changes in the system's permissions.,user-task-management.adoc
